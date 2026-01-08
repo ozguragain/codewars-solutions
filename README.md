@@ -1,4 +1,4 @@
-# CodeWars Solutions
+# Codewars Solutions
 
 A collection of my solutions to CodeWars challenges.  This repo tracks my progress as I work through problems of varying difficulty levels, from 8 kyu (beginner) all the way up to more challenging ranks.
 

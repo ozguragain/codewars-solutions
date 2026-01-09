@@ -1,21 +1,17 @@
 public class Rotator {
 ​
   public Object[] rotate(Object[] data, int n) {
-    n = n%(data.length);
-    if (data.length == 0) {return data;}
-    if (n<0){n=n+data.length;}
+    int length = data.length;
+    n = n % length;
+    if(n<0) n = n + length;
     
-    Object[] result = new Object[data.length];
-    int index = 0;
-    for(int i=data.length-n; i<data.length; i++){
-      result[index] = data[i];
-      index++;
-    }
+    Object[] result = new Object[length];
     
-    for(int i=0; i<data.length-n;i++){
-      result[index] = data[i];
-      index++;
+    for (int i = 0; i<length; i++){
+      int newIndex = (i+n) % length;
+      result[newIndex] = data[i]; 
     }
     return result;
   }
+​
 }

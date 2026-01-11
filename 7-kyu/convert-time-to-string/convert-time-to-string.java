@@ -9,6 +9,5 @@ class TimeUtils {
     int seconds = (int) remainingSecs%60;
     
     return String.format("%d %d %d %d", days, netHours, minutes, seconds);
-    
   } 
 }
